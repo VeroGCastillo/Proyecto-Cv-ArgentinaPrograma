@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.datosp {
+  width: auto;
+  margin: 20% auto;
+  margin-top: auto;
+}
+
+.datosp .header {
+  width: 100%;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.644);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header img {
+  width: 18%;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  border: 5px solid white;
+  box-shadow: 3px 3px 10px gray;
+  cursor: pointer;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.header-text {
+  color: white;
+  width: 60%;
+  margin-left: auto;
+}
+
+.header-text h1 {
+  margin-top: 10px;
+  font-size: 70px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.header-text p {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  left: 50px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lado-izquierdo {
+  width: 30%;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+}
+
+.lado-izquierdo .contact {
+  margin-top: 130px;
+  padding: 0 30px;
+}
+
+.contact h4 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.contact h5 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+contact p {
+  font-size: 17px;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.bars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+}
+
+.bars .bar .p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bar span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(192, 191, 191);
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.follow h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.follow h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.follow p {
+  font-size: 15px;
+}
+
+.follow button {
+  background-color: aquamarine;
+  width: 100px;
+  margin-bottom: 15px;
+  border-style: hidden;
+}
+.lado-derecho {
+  width: 70%;
+  padding: 50px;
+  background-color: aquamarine;
+}
+
+.lado-derecho h1 {
+  width: 170px;
+  height: 35px;
+  background-color: gray;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.lado-derecho p {
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.lado-derecho ul li {
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-decoration: solid;
+}
+
+.lado-derecho button {
+  background-color: rgb(236, 236, 236);
+  width: 100px;
+  margin-bottom: 15px;
+  border-style: inset;
+}
+
+@media (max-width: 1000px) {
+  .datosp {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lado-derecho {
+    flex-direction: column;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .lado-izquierdo {
+    flex-direction: column;
+  }
+  .lado-derecho {
+    flex-direction: column;
+  }
+  .bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  .header-text p {
+    font-size: 20px;
+  }
+
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact h4 {
+    font-size: 15px;
+  }
+
+  .contact h5 {
+    font-size: 15px;
+  }
+
+  .contact p {
+    font-size: 10px;
+  }
+  .header img {
+    width: 19%;
+    height: 100px;
+    top: 70px;
+    left: 20px;
+  }
+
+  .datosp .header {
+    width: 100%;
+    height: 150px;
+  }
+}
